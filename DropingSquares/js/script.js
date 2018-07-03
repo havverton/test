@@ -28,10 +28,13 @@ function game(){
     
     var i=square.y;
     var n=square.x;
-        var timerId = setInterval(function () {
+        var timerId = setInterval(function () 
+        {
+
             ctx.clearRect(n-50,Math.abs(i)-50,n, i);
             ctx.fillRect(n,i,square.height, square.width);
             i+=square.offsetY;
+
         }
             , 30);
      
